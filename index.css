@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --dcyan: hsl(184, 100%, 22%);
+  --vdcyan: hsl(179, 100%, 13%);
+  --para: hsla(0, 0%, 100%, 0.75);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.grid {
+  display: grid;
+  width: 740px;
+  height: 400px;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* All Sections */
+.section > h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+  margin: 1.5rem 0 2rem 2rem;
+}
+
+.section > p {
+  height: 100px;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--para);
+  margin: 0 2rem 2rem 2rem;
+  font-size: 0.87rem;
+}
+
+.section > picture > img {
+  width: auto;
+  margin: 2rem 0 0 2rem;
+}
+
+.section > button {
+  margin: 1rem 0 2rem 2rem;
+  padding: 10px;
+  border-radius: 50px;
+  border-color: rgba(255, 255, 255, 0);
+  width: 50%;
+}
+
+/* Section 1 */
+.section1 {
+  background-color: var(--orange);
+}
+
+/* Section 2 */
+.section2 {
+  background-color: var(--dcyan);
+}
+
+/* Section 3 */
+.section3 {
+  background-color: var(--vdcyan);
+}
