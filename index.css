@@ -59,6 +59,8 @@ main {
   border-radius: 50px;
   border-color: rgba(255, 255, 255, 0);
   width: 50%;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
 }
 
 /* Section 1 */
@@ -66,12 +68,41 @@ main {
   background-color: var(--orange);
 }
 
+.section1 > button {
+  color: var(--orange);
+}
+
 /* Section 2 */
 .section2 {
   background-color: var(--dcyan);
+}
+
+.section2 > button {
+  color: var(--dcyan);
 }
 
 /* Section 3 */
 .section3 {
   background-color: var(--vdcyan);
 }
+
+.section3 > button {
+  color: var(--vdcyan);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    width: 65%;
+    height: 100%;
+    margin: 3rem 0 3rem 0;
+  }
+
+  .section > p {
+    margin: 0 2rem 0 2rem;
+  }
+
+  .section > button {
+    margin: 0 0 2rem 2rem;
+  }
+} ;
